@@ -25,11 +25,11 @@ public class CandidateOperation {
         entityManager.persist(candidate);
     }
     
-    public void delete(Integer id) {
+    public void delete(Long id) {
         entityManager.remove(getItemById(id));
     }
     
-    public Candidat getItemById(Integer id) {
+    public Candidat getItemById(Long id) {
         return entityManager.find(Candidat.class, id);
     }
     

@@ -48,6 +48,9 @@
                     <td>
                         ${candidate.email}
                     </td>
+                    <td>
+                        <a href="${pageContext.request.contextPath}/DeleteCandidate?id=${candidate.id}">Sterge</a>
+                    </td>
                 </tr>
             </c:forEach>
         </table>

@@ -24,7 +24,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author NYKU
  */
 @WebServlet(name = "AddCandidate", urlPatterns = {"/AddCandidate"})
-public class AddCandidate extends HttpServlet {
+public class AddCandidateServlet extends HttpServlet {
 
     @EJB
     private CandidateOperation candidateOperation;
