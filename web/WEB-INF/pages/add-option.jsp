@@ -8,25 +8,23 @@
         <link rel="stylesheet" type="text/css" href="bulma.css">
     </head>
     <body>
-        <p>${message}</p>
         <div class="form__container">
-            <form action="Login" method="POST">  
-                <h1 class="title is-size-3">Autentificare</h1>
+            <form action="AddOption" method="POST" id="add-option">
                 <div class="field">
-                    <label class="label" for="email">E-mail:</label>
+                    <label class="label" for="nume">Nume</label>
                     <div class="control">
-                        <input class="input" type="email" name="email" maxlength="50" required>
+                        <input class="input" type="text" name="nume" maxlength="50" required>
                     </div>
                 </div>
                 <div class="field">
-                    <label class="label" for="parola">Parola:</label>
+                    <label class="label" for="tip_admitere">Tip Admitere</label>
                     <div class="control">
-                        <input class="input" type="password" name="parola" maxlength="50" required>
+                        <input class="input" type="text" name="tip_admitere" maxlength="10" required>
                     </div>
                 </div>
                 <div class="field">
                     <div class="control">
-                        <input class="button is-link" type="submit" value="Log In">
+                        <input class="button is-link" type="submit" value="Adauga">
                     </div>
                 </div>
             </form>

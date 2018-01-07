@@ -10,14 +10,14 @@
     <body>
         <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix ="c" %>
         <div class="container">
-            <h1 class="title is-size-4">Candidate Options</h1>
-            <table class="table">
+            <h1 class="title is-size-4">Optiuni</h1>
+            <table class="table is-striped">
                 <tr> 
-                    <td>Nr.Crt.</td>
+                    <td>Nr. Crt.</td>
                     <td>Nume</td>
                     <td>Tip Admitere</td>
                 </tr>
-                <c:forEach var="candidateoption" items="${candidateoptions}">
+                <c:forEach var="option" items="${options}">
                     <c:set var = "index" scope = "session" value = "0"/>
                     <tr> 
                         <td>
@@ -25,14 +25,14 @@
                             <c:out value = "${index}"/>
                         </td>
                         <td>
-                            ${candidateoption.idCandidat}
+                            ${option.nume}
                         </td>
                         <td>
-                            ${candidateoption.idOptiune}
+                            ${option.tipAdmitere}
                         </td>
                     </tr>
                 </c:forEach>
             </table>
-        </div>
+            </div>
     </body>
 </html>

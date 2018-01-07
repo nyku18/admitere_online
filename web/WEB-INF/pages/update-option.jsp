@@ -8,25 +8,24 @@
         <link rel="stylesheet" type="text/css" href="bulma.css">
     </head>
     <body>
-        <p>${message}</p>
         <div class="form__container">
-            <form action="Login" method="POST">  
-                <h1 class="title is-size-3">Autentificare</h1>
+            <form action="UpdateOption" method="POST" id="add-option">
+                <input type='hidden' value="${option.id}" name='id'/>
                 <div class="field">
-                    <label class="label" for="email">E-mail:</label>
+                    <label class="label" for="nume">Nume</label>
                     <div class="control">
-                        <input class="input" type="email" name="email" maxlength="50" required>
+                        <input class="input" type="text" name="nume" maxlength="50" value="${option.nume}" required>
                     </div>
                 </div>
                 <div class="field">
-                    <label class="label" for="parola">Parola:</label>
+                    <label class="label" for="tip_admitere">Tip Admitere</label>
                     <div class="control">
-                        <input class="input" type="password" name="parola" maxlength="50" required>
+                        <input class="input" type="text" name="tip_admitere" maxlength="10" value="${option.tipAdmitere}" required>
                     </div>
                 </div>
                 <div class="field">
                     <div class="control">
-                        <input class="button is-link" type="submit" value="Log In">
+                        <input class="button is-link" type="submit" value="Modifica">
                     </div>
                 </div>
             </form>
